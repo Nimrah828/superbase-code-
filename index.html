@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Todo App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Todo App</h1>
+        <button onclick="window.location.href='auth.html'" style="background-color: blue; color: White; margin: 10px"  > sign Up</button>
+
+        <!-- Add Todo -->
+        <div class="todo-form">
+            <input 
+                type="text" 
+                id="taskInput" 
+                placeholder="Enter your task"
+            >
+
+            <button id="addBtn">Add</button>
+        </div>
+
+        <!-- Todo List -->
+        <div id="todoList"></div>
+
+    </div>
+
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+    <script src="script.js"></script>
+</body>
+</html>
